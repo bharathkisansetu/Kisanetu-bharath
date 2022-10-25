@@ -2,9 +2,9 @@ import { View, Text,Image,TouchableOpacity } from 'react-native'
 import React from 'react'
 import KisansetuLogo from '../../Src/assets/KisansetuLogo.png'
 import {Feather} from '@expo/vector-icons'
-const FirstScreen = () => {
+const FirstScreen = ({navigation}) => {
   return (
-    <View className='flex-1 items-center justify-center bg-white ml-5 mr-5'>
+    <View className='flex-1 items-center justify-center bg-white'>
         <Image source={KisansetuLogo} className='h-16 w-16'/>
         
         <Text className='text-green-700 text-xl'>KISAN<Text className='text-orange-500'>SETU</Text></Text>
@@ -19,7 +19,8 @@ const FirstScreen = () => {
       </TouchableOpacity>
       </View>
       <TouchableOpacity
-      className='bg-green-700 h-10 w-full items-center justify-center rounded-full'>
+      onPress={()=> navigation.navigate('SecondScreen')}
+      className='bg-emerald-600 h-10 w-9/12 items-center justify-center rounded-full'>
         <Text className='text-white'>PROCEED</Text>
       </TouchableOpacity>
     </View>

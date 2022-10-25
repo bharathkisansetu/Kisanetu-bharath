@@ -2,9 +2,9 @@ import { View, Text, Image, TouchableOpacity, TextInput } from 'react-native'
 import React from 'react'
 import KisansetuLogo from '../../Src/assets/KisansetuLogo.png'
 
-const ThirdScreen = () => {
+const ThirdScreen = ({navigation}) => {
   return (
-    <View className='flex-1 items-center justify-center bg-white ml-5 mr-5'>
+    <View className='flex-1 items-center justify-center bg-white '>
       <Image source={KisansetuLogo} className='h-16 w-16'/>
       <Text className='text-green-700 text-xl'>KISAN<Text className='text-orange-500'>SETU</Text></Text>
         <Text className='font-medium text-lg mt-5 mb-5'>YOUR PHONE NUMBER</Text>
@@ -15,11 +15,12 @@ const ThirdScreen = () => {
         </View>
         
         <TouchableOpacity
-      className='bg-green-700 h-10 w-full items-center justify-center rounded-full mb-2'>
+        onPress={()=>navigation.navigate('verifyScreen')}
+      className='bg-emerald-600 h-10 w-9/12 items-center justify-center rounded-full mb-2'>
         <Text className='text-white'>NEXT</Text>
         </TouchableOpacity>
-        <View className='items-center justify-center'>
-        <Text className='text-xs ml-2 text-gray-500'>Tap Next to verify your account. An SMS may be sent to verify your number. Message and data rates may apply</Text>
+        <View className='ml-2 mr-2 items-center justify-center'>
+        <Text className='text-xs ml-2 text-gray-500'>Tap Next to verify your account. An SMS may be sent to verify <Text className='ml-6'>your number. Message and data rates may apply</Text> </Text>
         </View>
     </View>
   )
