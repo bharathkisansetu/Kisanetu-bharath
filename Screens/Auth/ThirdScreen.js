@@ -1,7 +1,7 @@
-import { View, Text, Image, TouchableOpacity, TextInput } from 'react-native'
+import { View, Text, TouchableOpacity, TextInput, Image } from 'react-native'
 import React from 'react'
-import KisansetuLogo from '../../Src/assets/KisansetuLogo.png'
 
+import KisansetuLogo from '../../Src/KisansetuLogo.png'
 const ThirdScreen = ({navigation}) => {
   return (
     <View className='flex-1 items-center justify-center bg-white '>
@@ -15,7 +15,7 @@ const ThirdScreen = ({navigation}) => {
         </View>
         
         <TouchableOpacity
-        onPress={()=>navigation.navigate('verifyScreen')}
+        onPress={()=>navigation.navigate('verify')}
       className='bg-emerald-600 h-10 w-9/12 items-center justify-center rounded-full mb-2'>
         <Text className='text-white'>NEXT</Text>
         </TouchableOpacity>

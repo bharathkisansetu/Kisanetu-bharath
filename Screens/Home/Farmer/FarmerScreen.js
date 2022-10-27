@@ -1,14 +1,13 @@
-import { View, Text, ScrollView } from 'react-native'
+import { View, Text } from 'react-native'
 import React from 'react'
-
+import { createDrawerNavigator } from '@react-navigation/drawer'
+import Home from './Home'
+const drawer = createDrawerNavigator()
 const FarmerScreen = () => {
   return (
-    <View>
-      <ScrollView>
-      <Text>FarmerScreen</Text>
-      </ScrollView>
-      
-    </View>
+    <drawer.Navigator >
+      <drawer.Screen name='farmers' component={Home}/>
+    </drawer.Navigator>
   )
 }
 
