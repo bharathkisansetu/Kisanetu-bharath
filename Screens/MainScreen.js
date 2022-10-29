@@ -13,7 +13,7 @@ const MainScreen = ({navigation}) => {
         </View>
         <View className='bg-gray-50 mb-3 rounded-xl'>
         <TouchableOpacity
-        onPress={()=>navigation.navigate('Farmer')}
+        onPress={()=>navigation.navigate('Farmermain')}
         className="mb-2"
         >
         <Image source={FarmerLogo} className="h-20 w-20 mt-3 p-4 ml-3 mr-3 "/>

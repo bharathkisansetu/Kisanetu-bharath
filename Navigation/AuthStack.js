@@ -8,7 +8,7 @@ import ThirdScreen from '../Screens/Auth/ThirdScreen';
 import VerifyScreen from '../Screens/Auth/VerifyScreen';
 import MainScreen from '../Screens/MainScreen';
 import SplashScreen from '../Screens/SplashScreen';
-import FarmerScreen from '../Screens/Home/Farmer/FarmerScreen'
+import FarmerMain from '../Screens/Home/Farmer/FarmerMain';
 const stack = createNativeStackNavigator()
 const AuthStack = () => {
   return (
@@ -20,7 +20,7 @@ const AuthStack = () => {
             <stack.Screen name='third' component={ThirdScreen}/>
             <stack.Screen name='verify' component={VerifyScreen}/>
             <stack.Screen name='main' component={MainScreen}/>
-            <stack.Screen name='farmer' component={FarmerScreen}/>
+            <stack.Screen name='farmer' component={FarmerMain}/>
             
       </stack.Navigator>
     
