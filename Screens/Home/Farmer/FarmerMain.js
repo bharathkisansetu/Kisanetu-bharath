@@ -16,32 +16,32 @@ const FarmerMain = () => {
     <drawer.Navigator screenOptions={{headerShown:false}} drawerContent={props => <Drawer{...props} />}>
         <drawer.Screen name='Farmer' component={HomeScreen} 
         options={{drawerIcon:({color,size})=>(
-          <Ionicons name='home-outline' size={20} color='#00CCBB'/>
+          <Ionicons name='home-outline' size={25} color='#00CCBB'/>
         )
       }}/>
         <drawer.Screen name='Consumer' component={ConsumerMain} 
         options={{drawerIcon:({color,size})=>(
-          <Ionicons name='ios-cart-outline' size={20} color='#00CCBB'/>
+          <Ionicons name='ios-cart-outline' size={25} color='#00CCBB'/>
         )
       }}/>
         <drawer.Screen name='Vendor' component={VendorMain} 
         options={{drawerIcon:({color,size})=>(
-          <Ionicons name='ios-people-outline' size={20} color='#00CCBB'/>
+          <Ionicons name='ios-people-outline' size={25} color='#00CCBB'/>
         )
       }}/>
         <drawer.Screen name='Profile Information' component={ProfileInfo} 
         options={{drawerIcon:({color,size})=>(
-          <Ionicons name='ios-person-outline' size={20} color='#00CCBB'/>
+          <Ionicons name='ios-person-outline' size={25} color='#00CCBB'/>
         )
       }}/>
         <drawer.Screen name='Settings' component={Settings} 
         options={{drawerIcon:({color,size})=>(
-          <Ionicons name='settings-outline' size={20} color='#00CCBB'/>
+          <Ionicons name='settings-outline' size={25} color='#00CCBB'/>
         )
       }}/>
         <drawer.Screen name='About KisanSetu' component={AboutKisan} 
         options={{drawerIcon:({color,size})=>(
-          <Ionicons name='ios-phone-portrait-sharp' size={20} color='#00CCBB'/>
+          <Ionicons name='ios-phone-portrait-sharp' size={25} color='#00CCBB'/>
         )
       }}
         />

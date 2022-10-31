@@ -12,12 +12,12 @@ const AddCrop = ({navigation}) => {
             navigation.openDrawer()
         }}
         className='ml-2 flex-1'>
-            <Ionicons name='reorder-three-outline' size={20} color='#00CCBB' className='ml-3' />
+            <Ionicons name='reorder-three-outline' size={25} color='#00CCBB' className='ml-3' />
             </TouchableOpacity>
         <View className='flex-1'><Text className='text-lg font-medium '>ADD CROP</Text></View>
         
-        <Ionicons name='call-outline' size={20} color='#00CCBB' />
-        <Image source={KisansetuLogo} className='ml-4 h-7 w-7'/>
+        <Ionicons name='call-outline' size={25} color='#00CCBB' />
+        <Image source={KisansetuLogo} className='ml-4 h-8 w-8'/>
         
       </View>
     </View>

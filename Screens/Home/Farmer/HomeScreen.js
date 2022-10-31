@@ -21,7 +21,7 @@ const HomeScreen = () => {
             backgroundColor:Colors.backgroundtab,
             left:20,
             right:20,
-            bottom:25,
+            bottom:20,
             height:50,
             borderRadius:20,
         },
