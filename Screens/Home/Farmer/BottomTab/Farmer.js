@@ -12,7 +12,9 @@ import Blogs from '../../../../Components/Blogs'
 const Farmer = ({navigation}) => {
   
   return (
-    <ScrollView>
+    <ScrollView
+    showsHorizontalScrollIndicator={false}
+    >
       {/* Start of the header section  */}
       <View className='bg-white h-10 items-center flex-row'>
         <TouchableOpacity 

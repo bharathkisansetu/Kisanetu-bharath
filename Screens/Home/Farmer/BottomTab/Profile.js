@@ -30,7 +30,9 @@ const Profile = ({navigation}) => {
         <Text className='text-lg ml-8'>Profile Information</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity className='flex-row mb-3'>
+        <TouchableOpacity className='flex-row mb-3'
+        onPress={()=>navigation.navigate('MyFarm')}
+        >
         <Ionicons name='leaf-outline' size={20} color='#00CCBB'/>
         <Text className='text-lg ml-8'>Farm Information</Text>
         </TouchableOpacity>

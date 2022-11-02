@@ -22,7 +22,7 @@ const MainScreen = ({navigation}) => {
         </View>
         <View className='bg-gray-50 mb-3 rounded-xl'>
         <TouchableOpacity
-        onPress={()=>navigation.navigate('consumer')}
+        onPress={()=>navigation.navigate('Consumermain')}
         className="mb-2">
             <Image source={ConsumerLogo} className="h-20 w-20 mt-3 p-4 ml-3 mr-3 "/>
             <Text className="ml-5">Consumer</Text>
@@ -30,7 +30,7 @@ const MainScreen = ({navigation}) => {
         </View>
         <View className='bg-gray-50 mb-20 rounded-xl'>
         <TouchableOpacity
-        onPress={()=>navigation.navigate('vendor')}
+        onPress={()=>navigation.navigate('Vendormain')}
         className="mb-2"
         >
         <Image source={VendorLogo} className="h-20 w-20 mt-3 p-4 ml-3 mr-3 "/>
