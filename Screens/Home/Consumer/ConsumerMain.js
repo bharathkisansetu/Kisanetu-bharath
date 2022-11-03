@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-import Setting from './Setting'
+
 import { createDrawerNavigator } from '@react-navigation/drawer'
 import Farmer from '../Farmer/BottomTab/Farmer'
 import ConsumerHome from './ConsumerHome'
@@ -11,7 +11,6 @@ import Settings from '../Farmer/DrawerTab/Settings'
 import AboutKisan from '../Farmer/DrawerTab/AboutKisan'
 import HomeScreen from '../Farmer/HomeScreen'
 import Ionicons from 'react-native-vector-icons/Ionicons'
-import Drawer from '../../../Components/Drawer'
 const Slider = createDrawerNavigator()
 const ConsumerMain = () => {
   return (

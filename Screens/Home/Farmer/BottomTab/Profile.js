@@ -25,7 +25,9 @@ const Profile = ({navigation}) => {
       <View className='bg-lime-100 p-3'>
         <Text className='text-xl mb-5'>My Details</Text>
 
-        <TouchableOpacity className='flex-row mb-3'>
+        <TouchableOpacity 
+        onPress={()=>navigation.navigate('EDIT ACCOUNT')}
+        className='flex-row mb-3'>
         <Ionicons name='ios-person-outline' size={20} color='#00CCBB'/>
         <Text className='text-lg ml-8'>Profile Information</Text>
         </TouchableOpacity>
@@ -42,7 +44,9 @@ const Profile = ({navigation}) => {
         <Text className='text-lg ml-8'>Sales Information</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity className='flex-row mb-3'>
+        <TouchableOpacity 
+        onPress={()=>navigation.navigate('FAQ')}
+        className='flex-row mb-3'>
         <AntDesign name='questioncircleo' size={20} color='#00CCBB'/>
         <Text className='text-lg ml-8'>FAQ</Text>
         </TouchableOpacity>
@@ -52,7 +56,9 @@ const Profile = ({navigation}) => {
         <Text className='text-lg ml-8'>Notification</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity className='flex-row mb-3'>
+        <TouchableOpacity 
+        onPress={()=>navigation.navigate('Setting Screen')}
+        className='flex-row mb-3'>
         <Ionicons name='settings-outline' size={20} color='#00CCBB'/>
         <Text className='text-lg ml-8'>Settings</Text>
         </TouchableOpacity>

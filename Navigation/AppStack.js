@@ -13,6 +13,9 @@ import MyFarm from '../Screens/Home/Farmer/MyFarm'
 import AddFarm from '../Screens/Home/Farmer/AddFarm'
 import ConsumerMain from '../Screens/Home/Consumer/ConsumerMain'
 import VendorMain from '../Screens/Home/Vendor/VendorMain'
+import EditProfile from '../Screens/Home/Farmer/EditProfile'
+import Settings from '../Screens/Home/Farmer/Settings'
+import SettingScreen from '../Screens/Home/Consumer/SettingScreen'
 const drawer = createDrawerNavigator()
 
 const stack = createNativeStackNavigator()
@@ -28,6 +31,8 @@ const AppStack = () => {
       <stack.Screen name='Farming' component={Farming} />
       <stack.Screen name='MyFarm' component={MyFarm} />
       <stack.Screen name='AddFarm' component={AddFarm} />
+      <stack.Screen name='EDIT ACCOUNT' component={EditProfile} />
+      <stack.Screen name='Setting Screen' component={SettingScreen} />
       
     </stack.Navigator>
   )

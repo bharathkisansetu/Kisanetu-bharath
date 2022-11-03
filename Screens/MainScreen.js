@@ -8,7 +8,7 @@ const MainScreen = ({navigation}) => {
   return (
     <View className='flex-1 items-center justify-center bg-white'>
         <View className='mb-16'>
-        <Image source={Logo} className="h-20 w-20 mt-3 p-4 ml-3 mr-3 "/>
+        <Image source={Logo} className="h-20 w-20 mt-8 p-4 ml-3 mr-3 "/>
         <Text className='text-green-700 text-xl'>KISAN<Text className='text-orange-500 text-xl'>SETU</Text></Text>
         </View>
         <View className='bg-gray-50 mb-3 rounded-xl'>
@@ -16,7 +16,7 @@ const MainScreen = ({navigation}) => {
         onPress={()=>navigation.navigate('Farmermain')}
         className="mb-2"
         >
-        <Image source={FarmerLogo} className="h-20 w-20 mt-3 p-4 ml-3 mr-3 "/>
+        <Image source={FarmerLogo} className="h-20 w-20  p-4 ml-3 mr-3 "/>
             <Text className="ml-7">Farmer</Text>
         </TouchableOpacity>
         </View>
@@ -28,7 +28,7 @@ const MainScreen = ({navigation}) => {
             <Text className="ml-5">Consumer</Text>
         </TouchableOpacity>
         </View>
-        <View className='bg-gray-50 mb-20 rounded-xl'>
+        <View className='bg-gray-50 mb-8 rounded-xl'>
         <TouchableOpacity
         onPress={()=>navigation.navigate('Vendormain')}
         className="mb-2"

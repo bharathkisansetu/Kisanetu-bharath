@@ -11,12 +11,12 @@ export const AuthProvider = ({children}) =>{
         setisLoading(false)
     }
 
-    const logout = ()=>{
+    const Logout = ()=>{
         setuserToken(null)
         setisLoading(false)
     }
     return(
-        <AuthContext.Provider value={{verify,logout, isLoading, userToken}}>
+        <AuthContext.Provider value={{verify,Logout, isLoading, userToken}}>
             {children}
         </AuthContext.Provider>
     );
