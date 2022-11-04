@@ -11,18 +11,20 @@ import Settings from '../Farmer/DrawerTab/Settings'
 import AboutKisan from '../Farmer/DrawerTab/AboutKisan'
 import HomeScreen from '../Farmer/HomeScreen'
 import Ionicons from 'react-native-vector-icons/Ionicons'
+import Drawer from '../../../Components/Drawer'
 const Slider = createDrawerNavigator()
 const ConsumerMain = () => {
   return (
     <Slider.Navigator screenOptions={{headerShown:false}} drawerContent={props => <Drawer{...props} />}>
-      <Slider.Screen name='Farmer' component={HomeScreen} 
-        options={{drawerIcon:({color,size})=>(
-          <Ionicons name='home-outline' size={25} color='#00CCBB'/>
-        )
-      }}/>
+      
         <Slider.Screen name='Consumer' component={ConsumerHome} 
         options={{drawerIcon:({color,size})=>(
           <Ionicons name='ios-cart-outline' size={25} color='#00CCBB'/>
+        )
+      }}/>
+      <Slider.Screen name='Farmer' component={HomeScreen} 
+        options={{drawerIcon:({color,size})=>(
+          <Ionicons name='home-outline' size={25} color='#00CCBB'/>
         )
       }}/>
         <Slider.Screen name='Vendor' component={VendorMain} 

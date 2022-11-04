@@ -14,7 +14,7 @@ const Request = ({navigation}) => {
         className='ml-2 flex-1'>
             <Ionicons name='reorder-three-outline' size={25} color='#00CCBB'  />
             </TouchableOpacity>
-        <View className='mr-24'><Text className='text-lg font-medium '>REQUEST</Text></View>
+        <View className='mr-28'><Text className='text-lg font-medium '>REQUEST</Text></View>
         
         
         <Image source={KisansetuLogo} className='h-8 w-8 mr-2'/>

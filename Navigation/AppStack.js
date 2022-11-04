@@ -16,6 +16,7 @@ import VendorMain from '../Screens/Home/Vendor/VendorMain'
 import EditProfile from '../Screens/Home/Farmer/EditProfile'
 import Settings from '../Screens/Home/Farmer/Settings'
 import SettingScreen from '../Screens/Home/Consumer/SettingScreen'
+import Faqscreen from '../Screens/Home/Farmer/Faqscreen'
 const drawer = createDrawerNavigator()
 
 const stack = createNativeStackNavigator()
@@ -33,6 +34,7 @@ const AppStack = () => {
       <stack.Screen name='AddFarm' component={AddFarm} />
       <stack.Screen name='EDIT ACCOUNT' component={EditProfile} />
       <stack.Screen name='Setting Screen' component={SettingScreen} />
+      <stack.Screen name='FAQ' component={Faqscreen} />
       
     </stack.Navigator>
   )
