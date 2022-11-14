@@ -1,9 +1,9 @@
 import { View, Text,TouchableOpacity, Image } from 'react-native'
 import React from 'react'
-import FarmerLogo from '../Src/FarmerLogo.png'
-import VendorLogo from '../Src/VendorLogo.png'
-import ConsumerLogo from '../Src/ConsumerLogo.png'
-import Logo from '../Src/KisansetuLogo.png'
+import Logo from '../Src/Logo/KisansetuLogo.png'
+import FarmerLogo from '../Src/Logo/FarmerLogo.png'
+import ConsumerLogo from '../Src/Logo/ConsumerLogo.png'
+import VendorLogo from '../Src/Logo/VendorLogo.png'
 const MainScreen = ({navigation}) => {
   return (
     <View className='flex-1 items-center justify-center bg-white'>
@@ -13,7 +13,7 @@ const MainScreen = ({navigation}) => {
         </View>
         <View className='bg-gray-50 mb-3 rounded-xl'>
         <TouchableOpacity
-        onPress={()=>navigation.navigate('Farmermain')}
+        onPress={()=>navigation.navigate('drawer')}
         className="mb-2"
         >
         <Image source={FarmerLogo} className="h-20 w-20  p-4 ml-3 mr-3 "/>

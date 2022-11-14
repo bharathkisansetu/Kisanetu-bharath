@@ -1,7 +1,7 @@
 import { View, Text, FlatList } from 'react-native'
 import React from 'react'
 import { market } from '../data'
-import MarketItem from './MarketItem'
+import MarketItem from '../Components/MarketItem'
 
 const Market = () => {
   return (

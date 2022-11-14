@@ -1,6 +1,6 @@
 import { View, Text, FlatList } from 'react-native'
 import React from 'react'
-import SliderItem from './SliderItem'
+import SliderItem from '../Components/SliderItem'
 import Slides from '../data'
 const Slider = () => {
   return (

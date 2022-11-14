@@ -1,17 +1,18 @@
 import { View, Text, FlatList } from 'react-native'
 import React from 'react'
+import CropItem from '../Components/CropItem'
 import { crop } from '../data'
-import CropItem from './CropItem'
 
 const Crops = () => {
   return (
     <View>
-      <FlatList
+       <FlatList
       data={crop}
       renderItem={({item})=> <CropItem item={item} />}
       horizontal
       showsHorizontalScrollIndicator={false}
-      />
+      /> 
+      
     </View>
   )
 }

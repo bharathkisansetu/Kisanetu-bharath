@@ -1,13 +1,13 @@
 import { View, Text,Image } from 'react-native'
 import React, {useEffect} from 'react'
-import KisansetuLogo from '../Src/KisansetuLogo.png'
+import KisansetuLogo from '../Src/Logo/KisansetuLogo.png'
 
 const SplashScreen = ({navigation}) => {
-  useEffect(()=>{
-    setTimeout(() => {
-        navigation.navigate('first')
-    }, 5000);
-},[])
+   useEffect(()=>{
+     setTimeout(() => {
+         navigation.navigate('first')
+     }, 2000);
+ },[])
   return (
     <View className='flex-1 items-center justify-center bg-white'>
       <Image source={KisansetuLogo} className='h-28 w-28'/>
